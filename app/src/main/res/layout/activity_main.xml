@@ -10,6 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="120dp"
-        android:src="@drawable/logo_petori"/>
+        android:src="@drawable/logo_petori"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingConstraints"/>
 
 </android.support.constraint.ConstraintLayout>

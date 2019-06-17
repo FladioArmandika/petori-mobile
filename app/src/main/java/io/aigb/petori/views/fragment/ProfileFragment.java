@@ -1,14 +1,19 @@
 package io.aigb.petori.views.fragment;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import io.aigb.petori.R;
+
+import static android.content.Context.MODE_PRIVATE;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -64,8 +69,19 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_profile, container,false);
+
+        SharedPreferences pref = getActivity().getSharedPreferences("mypref", MODE_PRIVATE);
+
+        String user = pref.getString("user","");
+
+
+        TextView namauser = (TextView) view.findViewById(R.id.nama_user);
+        namauser.setText("Halo " + user);
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

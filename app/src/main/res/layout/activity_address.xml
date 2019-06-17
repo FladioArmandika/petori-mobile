@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".views.AddressActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="22dp"
+            android:textColor="@color/textPrimary"
+            android:fontFamily="@font/my_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat Anda"/>
+
+        <EditText
+            android:id="@+id/address_nama"
+            android:fontFamily="@font/my_font"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/seg_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Penerima"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/address_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/seg_white"
+            android:hint="Alamat"
+            android:fontFamily="@font/my_font"
+            android:inputType="textMultiLine"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/address_kota"
+            android:fontFamily="@font/my_font"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/seg_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kota"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/btn_address_lanjut"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_gradient_primary"
+            android:text="Lanjut"
+            android:fontFamily="@font/my_font"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

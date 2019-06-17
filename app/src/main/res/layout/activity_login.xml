@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/bg"
     android:layout_height="match_parent"
     tools:context=".views.LoginActivity">
 
@@ -14,6 +15,7 @@
         android:padding="25dp">
 
         <EditText
+            android:id="@+id/edit_login_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/seg_white"
@@ -29,12 +31,13 @@
             android:paddingLeft="25dp"/>
 
         <EditText
+            android:id="@+id/edit_login_password"
             android:textColor="@color/textPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/seg_white"
             android:inputType="textPassword"
-            android:drawableLeft="@drawable/ic_lock"
+            android:drawableLeft="@drawable/ic_lock_secondary"
             android:textColorHint="@color/textSecondary"
             android:drawablePadding="15dp"
             android:layout_marginTop="20dp"

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ConfirmationActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--Nama-->
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_font"
+            android:textSize="14dp"
+            android:text="Nama"
+            android:textColor="@color/textSecondary"/>
+
+        <TextView
+            android:id="@+id/conf_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_font"
+            android:text="Aldi Sidik"
+            android:textSize="18dp"
+            android:textColor="@color/textPrimary"/>
+
+
+        <!--Alamat-->
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_font"
+            android:textSize="14dp"
+            android:text="Alamat"
+            android:textColor="@color/textSecondary"/>
+
+        <TextView
+            android:id="@+id/conf_alamat"
+            android:text="Jln. Jenderal Sudirman no.45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_font"
+            android:textSize="18dp"
+            android:textColor="@color/textPrimary"/>
+
+        <!--Kota-->
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_font"
+            android:textSize="14dp"
+            android:text="Kota"
+            android:textColor="@color/textSecondary"/>
+
+        <TextView
+            android:id="@+id/conf_kota"
+            android:text="Bandung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_font"
+            android:textSize="18dp"
+            android:textColor="@color/textPrimary"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/seg_secondary_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"/>
+
+            <TextView
+                android:id="@+id/conf_total"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_font"
+                android:text="5000"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirmation_lanjut"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_gradient_primary"
+            android:text="Lanjut"
+            android:fontFamily="@font/my_font"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
