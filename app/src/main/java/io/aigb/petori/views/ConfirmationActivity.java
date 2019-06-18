@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 import io.aigb.petori.R;
 
 public class ConfirmationActivity extends AppCompatActivity {
@@ -52,5 +55,31 @@ public class ConfirmationActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+    }
+
+
+    public void makeOrder() {
+
+        String nama = tNama.getText().toString();
+        String alamat = tAlamat.getText().toString();
+        String kota = tKota.getText().toString();
+        String total = tTotal.getText().toString();
+
+        URL url = new URL("http://petoriapi.herokuapp.com/user/login");
+        HttpURLConnection client = null;
+        try {
+            client = (HttpURLConnection) url.openConnection();
+            client.setRequestMethod("POST");
+            client.setRequestProperty("nama",nama);
+            client.setRequestProperty("alamat",alamat);
+            client.setRequestProperty("kota",kota);
+            client.setRequestProperty("total",total);
+            client.setDoOutput(true);
+        } catch (Exception e) {
+
+        } finally {
+            if(client != null) // Make sure the connection is not null.
+                client.disconnect();
+        }
     }
 }

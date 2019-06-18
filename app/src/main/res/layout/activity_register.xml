@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".views.RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/my_font"
+            android:textColor="@color/textPrimary"
+            android:text="Daftar Akun"/>
+
+        <EditText
+            android:id="@+id/reg_username"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:fontFamily="@font/my_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/seg_white"
+            android:inputType="text"
+            android:hint="username"/>
+
+        <EditText android:padding="20dp"
+            android:id="@+id/reg_email"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/seg_white"
+            android:hint="email"
+            android:fontFamily="@font/my_font"
+            android:inputType="textEmailAddress"/>
+
+        <EditText android:padding="20dp"
+            android:id="@+id/reg_password"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/my_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/seg_white"
+            android:hint="password"
+            android:inputType="textPassword"/>
+
+        <Button android:padding="20dp"
+            android:id="@+id/btn_register"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_gradient_primary"
+            android:text="DAFTAR"
+            android:fontFamily="@font/my_font"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textColor="@color/textPrimary"
+                android:text="sudah punya akun?"/>
+
+            <TextView
+                android:id="@+id/btn_changetologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:text=" Login"
+                android:textColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

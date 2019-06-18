@@ -38,10 +38,41 @@
                 android:text="petori"/>
 
             <LinearLayout
+                android:padding="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:background="@drawable/seg_white"
                 android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="@font/my_font"
+                        android:textColor="@color/textPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Melayani Kebutuhan Hewan Anda"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/textSecondary"
+                        android:text="temukan pelayanan hewan terdekat dan tecepat ke rumah anda"/>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:src="@drawable/petori2"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
@@ -80,7 +111,7 @@ H
 
                 <Button
                     android:id="@+id/btn_layanan1"
-                    android:text="KONTOL"
+                    android:text="Perawatan"
                     android:background="@drawable/seg_white"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
@@ -90,14 +121,15 @@ H
 
                 </Button>
 
-                <LinearLayout
+                <Button
+                    android:text="Medical"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/seg_white"
                     android:layout_width="match_parent"
                     android:layout_height="100dp">
 
-                </LinearLayout>
+                </Button>
 
             </LinearLayout>
 
@@ -106,23 +138,24 @@ H
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <LinearLayout
+                <Button
+                    android:text="Penitipan"
                     android:background="@drawable/seg_white"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:layout_marginRight="5dp"
                     android:layout_height="100dp">
+                </Button>
 
-                </LinearLayout>
-
-                <LinearLayout
+                <Button
+                    android:text="Laboratorium"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/seg_white"
                     android:layout_width="match_parent"
                     android:layout_height="100dp">
 
-                </LinearLayout>
+                </Button>
 
             </LinearLayout>
 
